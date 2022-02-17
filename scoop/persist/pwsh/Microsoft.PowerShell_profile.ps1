@@ -13,6 +13,7 @@ Set-PSReadLineOption -PredictionSource History
 Invoke-Expression (&scoop-search --hook)
 
 Set-Alias cd z -Option AllScope
+Set-Alias cz chezmoi
 
 Invoke-Expression (& {
     $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
