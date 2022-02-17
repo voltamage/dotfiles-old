@@ -1,0 +1,6 @@
+[user]
+	email = git@mail.voltamage.com
+	name = voltamage
+[credential "helperselector"]
+	selected = manager-core
+
