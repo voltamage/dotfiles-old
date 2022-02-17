@@ -1,3 +1,11 @@
+Import-Module PSReadLine
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineOption -HistoryNoDuplicates
+Set-PSReadLineOption -HistorySavePath C:\Users\volt\.pwsh_history
+Set-PSReadLineOption -HistorySearchCursorMovesToEnd
+Set-PSReadLineOption -PredictionSource History
+
 Invoke-Expression (&scoop-search --hook)
 
 Set-Alias cd z -Option AllScope
